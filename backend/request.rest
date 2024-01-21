@@ -1,0 +1,12 @@
+POST http://localhost:3001/authenticate
+Content-Type: application/json
+
+{
+    "username":"priyansh"
+}
+
+
+
+# 9a3f34f3-78a6-4ffa-8604-ad221ce5ff57
+
+# pk - 953425cc-0f38-43b2-8b7b-39c125b69ef8
