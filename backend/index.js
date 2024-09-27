@@ -13,7 +13,7 @@ app.post("/authenticate", async (req, res) => {
     const r = await axios.put(
       "https://api.chatengine.io/users/",
       { username: username, secret: username, first_name: username },
-      { headers: { "private-key": "953425cc-0f38-43b2-8b7b-39c125b69ef8" },}
+      { headers: { "private-key": "63a7fddd-e30c-476d-9b73-5e92225edbe9" },}
     );
     return res.status(r.status).json(r.data);
   }
@@ -22,7 +22,7 @@ app.post("/authenticate", async (req, res) => {
     if (e.response) {
       res.status(e.response.status).json({ error: e.response.data });
     } else {
-      console.error("Internal Server Error:", e); // Log the error details
+      console.error("Internal Server Error:", e);
       res.status(500).json({ error: "Internal Server Error" });
     }
   }
