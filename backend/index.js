@@ -26,7 +26,6 @@ app.post("/authenticate", async (req, res) => {
       res.status(500).json({ error: "Internal Server Error" });
     }
   }
-  
 });
 
 app.listen(3001);
